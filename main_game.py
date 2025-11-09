@@ -9,7 +9,8 @@ list_of_words = [
     "cat",
     "dog",
     "avocado",
-    "epic"
+    "epic",
+    "watermelon"
 ]
 
 def choose_a_random_word(word_list: list):
