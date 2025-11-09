@@ -1,5 +1,7 @@
 import random
 
+from google.api_core.retry import retry_target_stream
+
 print("Welcome to the Hangman game!")
 
 list_of_words = [
@@ -24,5 +26,13 @@ def print_hidden_word(word):
     ...
 
 
+if הכל בסדר:
+    return את האות
+else:
+    return False
+
+
 if __name__ == '__main__':
-    print(choose_a_random_word(list_of_words))
+    # print(choose_a_random_word(list_of_words))
+    word = "asdasd"
+    print(word.isalpha())
