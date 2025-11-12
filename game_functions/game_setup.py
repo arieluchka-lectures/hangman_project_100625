@@ -15,17 +15,7 @@ def choose_random_word(word_list):
     # random.randrange()
     ...
 
-
-# WILL CREATE DISPLAY OF WORD IN RUNTIME
-# # --- FUNCTION 2 ---
-# # Write a function that creates the initial display for a word.
-# # It should return a string with underscores separated by spaces (e.g., "_ _ _ _").
-# # The number of underscores should match the length of the word.
-# def initialize_secret_word_display(word):
-#     ...
-
-
-# --- FUNCTION 3 ---
+# --- FUNCTION 2 ---
 # Write a function that gets a word, and returns a set of all the unique letters in that word.
 # (make sure to lowercase all letters in the word, and dont add white spaces!)
 # EXAMPLE:
@@ -33,10 +23,23 @@ def choose_random_word(word_list):
 #   if we input the word="Ice Cream", the set will be {"i", "c", "e", "c", "r", "a", "m"}
 
 def initialize_letters_to_be_guessed(word):
-    ...
+    letters_set = set()
+    for letter in word:
+        if letter.isalpha():
+            letters_set.add(letter.lower())
+        else:
+            continue
+        #OPTION 2
+        # if letter != " ":
+        #     letters_set.add(letter)
+        # else:
+        #     continue
+
+    return letters_set
 
 
-# --- FUNCTION 4 ---
+
+# --- FUNCTION 3 ---
 # Write a function that returns the alphabet as a list/tuple.
 # So if the input is "abcde", the function will return ["a", "b", "c", "d", "e"]
 def initialize_alphabet_display(alphabet: str):

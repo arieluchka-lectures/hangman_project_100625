@@ -29,10 +29,6 @@ def is_game_over(hidden_letters, attempts_remaining):
     ...
 
 
-
-
-
-
 # Test your functions here!
 if __name__ == "__main__":
     
